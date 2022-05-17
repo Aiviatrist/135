@@ -3,7 +3,7 @@ function setup(){
     canvas=createCanvas(480,480);
     canvas.center();
     video=createCapture(VIDEO);
-    vidoe.size(400,400);
+    video.size(400,400);
     video.hide();
 }
 function Start(){
@@ -16,5 +16,16 @@ function modelloaded(){
     statius=true;
 }
 function draw(){
-    image(vidoe,0,0,400,400);
+    image(video,0,0,400,400);
+}
+object=[];
+function gotResults(results){
+    object=[results];
+    if(object[i]==object_name){
+        lol=object[0].confidence;
+        percent= floor(object[i].confidence*100); 
+        obx=object[0].x;
+        oby=object[0].y;
+        
+    }
 }
